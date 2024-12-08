@@ -1,0 +1,19 @@
+@startuml iFood
+actor Frontend
+participant "API Gateway" as APIGateway
+participant "Backend-For-Frontend" as BackendForFrontend
+participant "Event Bridge" as EventBridge
+participant "Provision Microservice" as ProvisionMicroservice
+participant "Provision Database" as ProvisionDatabase
+
+Frontend -> APIGateway : Request
+APIGateway -> BackendForFrontend : Forward Request
+BackendForFrontend -> EventBridge : Generate Event
+EventBridge -> ProvisionMicroservice : Route Event
+ProvisionMicroservice -> ProvisionDatabase : Query Database
+ProvisionDatabase --> ProvisionMicroservice : Return Data
+ProvisionMicroservice --> EventBridge : Return Data
+EventBridge --> BackendForFrontend : Return Data
+BackendForFrontend --> APIGateway : Return Data
+APIGateway --> Frontend : Return Data
+@enduml
