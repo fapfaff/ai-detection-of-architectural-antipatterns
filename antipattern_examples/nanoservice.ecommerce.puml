@@ -1,0 +1,48 @@
+@startuml
+actor User
+component "Frontend" as frontend
+component "Recommendation Service" as recommendation
+component "Product Catalog Service" as product
+component "Get Cart Service" as cart_get
+component "Update Cart Service" as cart_update
+component "Checkout Service" as checkout
+component "Payment Processor" as payment_processor
+component "Payment Card Validator" as payment_card
+component "Payment Fraud Detector" as payment_fraud
+component "Payment Tax Calculator" as payment_tax
+component "Email Service" as email
+component "Gmail Service" as gmail
+component "Shipping Rate Calculator" as shipping_calculator
+component "Shipping Distance Calculator" as shipping_distance
+component "Currency Conversion Service" as currency_conversion
+component "Exchange Rate Fetcher" as exchange_rate_fetcher
+component "Ad Request Service" as ad_request
+component "Ad Bidding Service" as ad_bidding
+component "Ad Impression Tracker" as ad_tracker
+database "Redis Cache" as redis
+
+User --> frontend : HTTP
+frontend -r-> checkout
+frontend --> product
+frontend --> cart_update
+frontend --> cart_get
+frontend --> recommendation
+frontend --> ad_request
+ad_request --> ad_bidding
+ad_bidding --> ad_tracker
+checkout --> payment_processor
+payment_processor --> payment_card
+payment_processor --> payment_fraud
+payment_processor --> payment_tax
+checkout --> email
+email --> gmail
+checkout --> shipping_calculator
+shipping_calculator --> shipping_distance
+checkout --> currency_conversion
+currency_conversion --> exchange_rate_fetcher
+checkout --> cart_get
+checkout --> product
+recommendation --> product
+cart_get --> redis
+cart_update--> redis
+@enduml
