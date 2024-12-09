@@ -1,0 +1,72 @@
+@startuml
+component "Streaming Workflow Orchestrator" as streaming
+component "Studio Workflow Orchestrator" as studio
+component "Subtitle Generator" as sub_generator
+component "Subtitle Validator" as sub_validator
+component "Timed Text Service" as timed_text
+component "Audio Encoding Service" as audio_encoding
+component "Audio Validation Service" as audio_validation
+component "Audio Synchronization Service" as audio_sync
+component "Muxing Service" as muxing_service
+component "Format Packaging Service" as format_packaging
+component "Video Inspection Service" as video_inspection
+component "Frame Integrity Checker" as frame_checker
+component "Resolution Validator" as resolution_validator
+component "Bitrate Analyzer" as bitrate_analyzer
+component "Ladder Generation Service" as ladder
+component "Bitrate Ladder Generator" as bitrate_ladder_generator
+component "Resolution Ladder Generator" as resolution_ladder_generator
+component "Ladder Validator" as ladder_validator
+component "Video Encoding Service" as video_encoding
+component "H.264 Encoding Service" as h264_encoder
+component "H.265 Encoding Service" as h265_encoder
+component "AV1 Encoding Service" as av1_encoder
+component "Video Quality Service" as video_quality
+component "Scene Quality Analyzer" as scene_quality
+component "Color Depth Analyzer" as color_depth
+component "Frame Rate Validator" as frame_rate_validator
+component "HDR Compliance Checker" as hdr_checker
+component "Complex Analysis Service" as complex_analysis
+component "Format Compliance Checker" as format_checker
+component "Playback Simulation Service" as playback_simulator
+component "Video Validation Service" as video_validation
+
+streaming --> timed_text
+timed_text --> sub_generator
+timed_text --> sub_validator
+streaming --> audio_encoding
+audio_encoding --> audio_validation
+audio_encoding --> audio_sync
+streaming --> muxing_service
+streaming --> format_packaging
+streaming --> video_inspection
+streaming --> ladder
+streaming --> video_encoding
+streaming --> video_quality
+studio --> timed_text
+studio --> audio_encoding
+audio_encoding --> audio_validation
+audio_encoding --> audio_sync
+studio --> muxing_service
+studio --> format_packaging
+studio --> video_inspection
+studio --> video_encoding
+complex_analysis --> video_encoding
+complex_analysis --> video_quality
+video_inspection --> frame_checker 
+video_inspection --> resolution_validator
+video_inspection --> bitrate_analyzer
+ladder --> bitrate_ladder_generator
+ladder --> resolution_ladder_generator
+bitrate_ladder_generator --> ladder_validator
+resolution_ladder_generator --> ladder_validator
+video_encoding --> video_validation
+video_encoding --> h264_encoder
+video_encoding --> h265_encoder
+video_encoding --> av1_encoder
+ladder --> complex_analysis
+video_quality --> scene_quality
+video_quality --> color_depth
+scene_quality --> hdr_checker
+video_quality --> frame_rate_validator
+@enduml
