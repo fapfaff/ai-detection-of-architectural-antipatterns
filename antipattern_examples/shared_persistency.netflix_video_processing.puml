@@ -1,0 +1,35 @@
+@startuml Netflix Video Processing
+component "Streaming Workflow Orchestrator" as streaming
+component "Studio Workflow Orchestrator" as studio
+component "Timed Text Service" as timed_text
+component "Audio Serivies" as audio
+component "Packaging Service" as packaging
+component "Video Inspection Service" as video_inspection
+component "Ladder Generation Service" as ladder
+component "Video Encoding Service" as video_encoding
+component "Video Quality Service" as video_quality
+component "Complex Analysis Service" as complex_analysis
+component "Video Validation Service" as video_validation
+database "Video Processing Data Store" as video_store
+
+streaming --> timed_text
+streaming --> audio
+streaming --> packaging
+streaming --> video_inspection
+streaming --> ladder
+streaming --> video_encoding
+streaming --> video_quality
+studio --> timed_text
+studio --> audio
+studio --> packaging
+studio --> video_inspection
+studio --> video_encoding
+ladder --> complex_analysis
+ladder --> video_store
+complex_analysis --> video_encoding
+complex_analysis --> video_quality
+video_encoding --> video_validation
+video_encoding --> video_store
+video_quality --> video_store
+video_validation --> video_store
+@enduml
