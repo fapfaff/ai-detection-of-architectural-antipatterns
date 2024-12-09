@@ -1,4 +1,4 @@
-@startuml
+@startuml Netflix Video Processing
 component "Streaming Workflow Orchestrator" as streaming
 component "Studio Workflow Orchestrator" as studio
 component "Subtitle Generator" as sub_generator

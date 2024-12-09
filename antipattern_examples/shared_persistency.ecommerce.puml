@@ -1,0 +1,40 @@
+@startuml Ecommerce
+actor User
+component "Frontend" as frontend
+component "Ad Service" as ad
+component "Recommendation Service" as recommendation
+component "Product Catalog Service" as product
+component "Cart Service" as cart
+database "Redis Cache" as redis
+component "Checkout Service" as checkout
+component "Payment Service" as payment
+component "Email Service" as email
+component "Shipping Service" as shipping
+component "Currency Service" as currency
+database "Order Database" as order_database
+database "User Database" as user_database
+database "Product Database" as product_database
+
+User --> frontend : HTTP
+frontend --> checkout
+frontend --> ad
+frontend --> recommendation
+frontend --> product
+frontend --> cart
+frontend --> shipping
+frontend --> currency
+checkout --> payment
+checkout --> email
+checkout --> shipping
+checkout --> currency
+checkout --> cart
+checkout --> product
+recommendation --> product
+cart --> redis
+product -> product_database
+payment -> order_database
+checkout -> order_database
+shipping -> user_database
+email -> user_database
+recommendation -> user_database
+@enduml
