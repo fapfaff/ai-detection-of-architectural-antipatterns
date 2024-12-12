@@ -1,0 +1,238 @@
+openapi: 3.0.0
+info:
+  title: Redocly Museum API
+  description: Imaginary, but delightful Museum API for interacting with museum services and information. Built with love by Redocly.
+  version: 1.2.1
+  termsOfService: 'https://redocly.com/subscription-agreement/'
+  contact:
+    email: team@redocly.com
+    url: "https://redocly.com/docs/cli/"
+  license:
+    name: MIT
+    url: "https://opensource.org/license/mit/"
+servers:
+  - url: "https://redocly.com/_mock/docs/openapi/museum-api"
+paths:
+  /hours:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/StartDate"
+        - $ref: "#/components/parameters/PaginationPage"
+        - $ref: "#/components/parameters/PaginationLimit"
+      responses:
+        "200":
+          description: Success.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+  /special-event-management-endpoint:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          description: Created.
+          content:
+            application/json:
+              schema:
+                type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    get:
+      parameters:
+        - $ref: "#/components/parameters/StartDate"
+        - $ref: "#/components/parameters/EndDate"
+        - $ref: "#/components/parameters/PaginationPage"
+        - $ref: "#/components/parameters/PaginationLimit"
+      responses:
+        "200":
+          description: Success.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+  /special-event-management-endpoint/{id}:
+    get:
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "200":
+          description: Success.
+          content:
+            application/json:
+              schema:
+                type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    patch:
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Success.
+          content:
+            application/json:
+              schema:
+                type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+    delete:
+      operationId: deleteSpecialEvent
+      parameters:
+        - $ref: "#/components/parameters/Id"
+      responses:
+        "204":
+          description: Success - no content.
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "401":
+          $ref: '#/components/responses/Unauthorized'
+        "404":
+          $ref: '#/components/responses/NotFound'
+  /buy:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          description: Created.
+          content:
+            application/json:
+              schema:
+                type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+  /buy/{ticket}/qr:
+    get:
+      parameters:
+        - name: ticket
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Success.
+          content:
+            image/png:
+              schema:
+                type: object
+        "400":
+          $ref: '#/components/responses/BadRequest'
+        "404":
+          $ref: '#/components/responses/NotFound'
+webhooks:
+  publishNewEvent:
+    post:
+      summary: New special event added
+      description: Publish details of a new or updated event.
+      operationId: publishNewEvent
+      tags:
+        - Events
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "202":
+          description: Data accepted.
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        type:
+          type: string
+        title:
+          type: string
+  securitySchemes:
+    MuseumPlaceholderAuth:
+      type: http
+      scheme: basic
+  parameters:
+    PaginationPage:
+      name: page
+      in: query
+      schema:
+        type: integer
+        default: 1
+    PaginationLimit:
+      name: limit
+      in: query
+      schema:
+        type: integer
+        default: 10
+        maximum: 30
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+    StartDate:
+      name: startDate
+      in: query
+      schema:
+        type: string
+    EndDate:
+      name: endDate
+      in: query
+      schema:
+        type: string
+  responses:
+    BadRequest:
+      description: Bad request.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: Not found.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Unauthorized.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Error'
+security:
+  - MuseumPlaceholderAuth: []
