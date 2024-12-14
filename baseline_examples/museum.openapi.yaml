@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: Redocly Museum API
   description: Imaginary, but delightful Museum API for interacting with museum services and information. Built with love by Redocly.
-  version: 1.2.1
+  version: 1.0.0
   termsOfService: 'https://redocly.com/subscription-agreement/'
   contact:
     email: team@redocly.com
@@ -11,7 +11,7 @@ info:
     name: MIT
     url: "https://opensource.org/license/mit/"
 servers:
-  - url: "https://redocly.com/_mock/docs/openapi/museum-api"
+  - url: "https://api.museum.com/v1"
 paths:
   /museum-hours:
     get:
