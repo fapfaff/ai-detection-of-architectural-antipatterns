@@ -1,0 +1,24 @@
+@startuml 2PC
+participant Coordinator
+participant CustomerMicroservice
+participant OrderMicroservice
+
+Coordinator -> Coordinator : Create transaction (tid)
+Coordinator -> CustomerMicroservice : PrepareUpdateCustomerFund(tid)
+CustomerMicroservice --> Coordinator : _prepared
+Coordinator -> CustomerMicroservice : PrepareCreateOrder(tid)
+CustomerMicroservice --> OrderMicroservice: PrepareCreateOrder(tid)
+OrderMicroservice -> PaymentService: PreparePayment(tid)
+PaymentService --> OrderMicroservice : _prepared
+OrderMicroservice --> CustomerMicroservice : _prepared
+CustomerMicroservice --> Coordinator : _prepared
+
+Coordinator -> CustomerMicroservice : CommitUpdateCustomerFund(tid)
+Coordinator -> OrderMicroservice : CommitCreateOrder(tid)
+OrderMicroservice -> PaymentService: CommitPayment(tid)
+PaymentService --> OrderMicroservice : _done
+OrderMicroservice --> Coordinator : _done
+CustomerMicroservice --> Coordinator : _done
+
+Coordinator -> Coordinator : End transaction (tid)
+@enduml
