@@ -1,0 +1,31 @@
+@startuml Ledger
+actor Rider
+participant "Trip Service" as TS
+participant "Payment Service" as PS
+participant "LedgerStore" as LS
+
+Rider -> TS: Start Trip
+TS -> PS: Authorize Payment
+PS -> LS: Save Hold
+
+Rider -> TS: End Trip
+TS -> PS: Capture Payment
+
+' Chatty Service Antipattern
+PS -> LS: Lookup Hold
+PS -> LS: Check Hold Status
+PS -> LS: Retrieve Hold Details
+PS -> LS: Verify Hold Amount
+
+alt Hold Found
+    PS -> LS: Charge Hold
+    PS -> LS: Confirm Transaction
+else Hold Not Found
+    PS -> LS: Create New Charge
+    PS -> LS: Verify New Charge
+end
+
+PS -> TS: Payment Captured
+TS -> Rider: Trip Completed
+
+@enduml
