@@ -1,0 +1,27 @@
+@startuml
+actor Rider
+participant "Trip Service" as TS
+participant "Payment Service" as PS
+participant "Ledger Aggregator Service" as LAS
+participant "LedgerStore" as LS
+
+Rider -> TS: Start Trip
+TS -> LAS: Prepare Payment
+LAS -> PS: Authorize Payment
+PS -> LAS: Confirm Payment Authorization
+LAS -> LS: Save Hold
+
+Rider -> TS: End Trip
+TS -> LAS: Finalize Payment
+LAS -> PS: Capture Payment
+PS -> LAS: Verify Hold Exists
+LAS -> LS: Lookup Hold
+LAS -> PS: Is hold found?
+
+alt Hold Found
+    LAS -> LS: Charge/Void the Hold
+else Hold Not Found
+    LAS -> PS: Create New Charge
+    PS -> LS: Record the Charge
+end
+@enduml
