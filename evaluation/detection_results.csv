@@ -23,3 +23,27 @@ Nanoservices,Ecommerce,GPT-4o,CoT+Example,true
 Nanoservices,Video Processing,GPT-4o,CoT+Example,false
 Shared Persistency,Ecommerce,GPT-4o,CoT+Example,true
 Shared Persistency,Video Processing,GPT-4o,CoT+Example,true
+Ambigious Service,Museum,Claude 3.5 Sonnet,Standard,true
+Ambigious Service,Twilio,Claude 3.5 Sonnet,Standard,false
+API Versioning,Museum,Claude 3.5 Sonnet,Standard,true
+API Versioning,Twilio,Claude 3.5 Sonnet,Standard,true
+Service Chain,2PC,Claude 3.5 Sonnet,Standard,false
+Service Chain,Ledger,Claude 3.5 Sonnet,Standard,false
+Chatty Service,2PC,Claude 3.5 Sonnet,Standard,false
+Chatty Service,Ledger,Claude 3.5 Sonnet,Standard,true
+Nanoservices,Ecommerce,Claude 3.5 Sonnet,Standard,false
+Nanoservices,Video Processing,Claude 3.5 Sonnet,Standard,false
+Shared Persistency,Ecommerce,Claude 3.5 Sonnet,Standard,false
+Shared Persistency,Video Processing,Claude 3.5 Sonnet,Standard,false
+Ambigious Service,Museum,Claude 3.5 Sonnet,CoT+Example,true
+Ambigious Service,Twilio,Claude 3.5 Sonnet,CoT+Example,false
+API Versioning,Museum,Claude 3.5 Sonnet,CoT+Example,false
+API Versioning,Twilio,Claude 3.5 Sonnet,CoT+Example,true
+Service Chain,2PC,Claude 3.5 Sonnet,CoT+Example,false
+Service Chain,Ledger,Claude 3.5 Sonnet,CoT+Example,true
+Chatty Service,2PC,Claude 3.5 Sonnet,CoT+Example,true
+Chatty Service,Ledger,Claude 3.5 Sonnet,CoT+Example,true
+Nanoservices,Ecommerce,Claude 3.5 Sonnet,CoT+Example,false
+Nanoservices,Video Processing,Claude 3.5 Sonnet,CoT+Example,true
+Shared Persistency,Ecommerce,Claude 3.5 Sonnet,CoT+Example,true
+Shared Persistency,Video Processing,Claude 3.5 Sonnet,CoT+Example,true
