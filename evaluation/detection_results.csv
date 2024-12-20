@@ -1,49 +1,49 @@
-Antipattern,Example,Model,Prompt,Detected
-Ambigious Service,Museum,GPT-4o,Standard,true
-Ambigious Service,Twilio,GPT-4o,Standard,true
-API Versioning,Museum,GPT-4o,Standard,true
-API Versioning,Twilio,GPT-4o,Standard,false
-Service Chain,2PC,GPT-4o,Standard,false
-Service Chain,Ledger,GPT-4o,Standard,false
-Chatty Service,2PC,GPT-4o,Standard,false
-Chatty Service,Ledger,GPT-4o,Standard,true
-Nanoservices,Ecommerce,GPT-4o,Standard,true
-Nanoservices,Video Processing,GPT-4o,Standard,false
-Shared Persistency,Ecommerce,GPT-4o,Standard,true
-Shared Persistency,Video Processing,GPT-4o,Standard,false
-Ambigious Service,Museum,GPT-4o,CoT+Example,false
-Ambigious Service,Twilio,GPT-4o,CoT+Example,true
-API Versioning,Museum,GPT-4o,CoT+Example,false
-API Versioning,Twilio,GPT-4o,CoT+Example,false
-Service Chain,2PC,GPT-4o,CoT+Example,false
-Service Chain,Ledger,GPT-4o,CoT+Example,false
-Chatty Service,2PC,GPT-4o,CoT+Example,true
-Chatty Service,Ledger,GPT-4o,CoT+Example,true
-Nanoservices,Ecommerce,GPT-4o,CoT+Example,true
-Nanoservices,Video Processing,GPT-4o,CoT+Example,false
-Shared Persistency,Ecommerce,GPT-4o,CoT+Example,true
-Shared Persistency,Video Processing,GPT-4o,CoT+Example,true
-Ambigious Service,Museum,Claude 3.5 Sonnet,Standard,true
-Ambigious Service,Twilio,Claude 3.5 Sonnet,Standard,false
-API Versioning,Museum,Claude 3.5 Sonnet,Standard,true
-API Versioning,Twilio,Claude 3.5 Sonnet,Standard,true
-Service Chain,2PC,Claude 3.5 Sonnet,Standard,false
-Service Chain,Ledger,Claude 3.5 Sonnet,Standard,false
-Chatty Service,2PC,Claude 3.5 Sonnet,Standard,false
-Chatty Service,Ledger,Claude 3.5 Sonnet,Standard,true
-Nanoservices,Ecommerce,Claude 3.5 Sonnet,Standard,false
-Nanoservices,Video Processing,Claude 3.5 Sonnet,Standard,false
-Shared Persistency,Ecommerce,Claude 3.5 Sonnet,Standard,false
-Shared Persistency,Video Processing,Claude 3.5 Sonnet,Standard,false
-Ambigious Service,Museum,Claude 3.5 Sonnet,CoT+Example,true
-Ambigious Service,Twilio,Claude 3.5 Sonnet,CoT+Example,false
-API Versioning,Museum,Claude 3.5 Sonnet,CoT+Example,false
-API Versioning,Twilio,Claude 3.5 Sonnet,CoT+Example,true
-Service Chain,2PC,Claude 3.5 Sonnet,CoT+Example,false
-Service Chain,Ledger,Claude 3.5 Sonnet,CoT+Example,true
-Chatty Service,2PC,Claude 3.5 Sonnet,CoT+Example,true
-Chatty Service,Ledger,Claude 3.5 Sonnet,CoT+Example,true
-Nanoservices,Ecommerce,Claude 3.5 Sonnet,CoT+Example,false
-Nanoservices,Video Processing,Claude 3.5 Sonnet,CoT+Example,true
-Shared Persistency,Ecommerce,Claude 3.5 Sonnet,CoT+Example,true
-Shared Persistency,Video Processing,Claude 3.5 Sonnet,CoT+Example,true
+Antipattern,Example,Model,Prompt,Detected,ImprovementQuality
+Ambigious Service,Museum,GPT-4o,Standard,true,3
+Ambigious Service,Twilio,GPT-4o,Standard,true,3
+API Versioning,Museum,GPT-4o,Standard,true,3
+API Versioning,Twilio,GPT-4o,Standard,false,0
+Service Chain,2PC,GPT-4o,Standard,false,0
+Service Chain,Ledger,GPT-4o,Standard,false,0
+Chatty Service,2PC,GPT-4o,Standard,false,0
+Chatty Service,Ledger,GPT-4o,Standard,true,3
+Nanoservices,Ecommerce,GPT-4o,Standard,true,3
+Nanoservices,Video Processing,GPT-4o,Standard,false,0
+Shared Persistency,Ecommerce,GPT-4o,Standard,true,3
+Shared Persistency,Video Processing,GPT-4o,Standard,false,0
+Ambigious Service,Museum,GPT-4o,CoT+Example,false,0
+Ambigious Service,Twilio,GPT-4o,CoT+Example,true,2
+API Versioning,Museum,GPT-4o,CoT+Example,false,0
+API Versioning,Twilio,GPT-4o,CoT+Example,false,0
+Service Chain,2PC,GPT-4o,CoT+Example,false,0
+Service Chain,Ledger,GPT-4o,CoT+Example,false,0
+Chatty Service,2PC,GPT-4o,CoT+Example,true,3
+Chatty Service,Ledger,GPT-4o,CoT+Example,true,3
+Nanoservices,Ecommerce,GPT-4o,CoT+Example,true,3
+Nanoservices,Video Processing,GPT-4o,CoT+Example,false,0
+Shared Persistency,Ecommerce,GPT-4o,CoT+Example,true,3
+Shared Persistency,Video Processing,GPT-4o,CoT+Example,true,3
+Ambigious Service,Museum,Claude 3.5 Sonnet,Standard,true,3
+Ambigious Service,Twilio,Claude 3.5 Sonnet,Standard,false,0
+API Versioning,Museum,Claude 3.5 Sonnet,Standard,true,3
+API Versioning,Twilio,Claude 3.5 Sonnet,Standard,true,3
+Service Chain,2PC,Claude 3.5 Sonnet,Standard,false,0
+Service Chain,Ledger,Claude 3.5 Sonnet,Standard,false,0
+Chatty Service,2PC,Claude 3.5 Sonnet,Standard,false,0
+Chatty Service,Ledger,Claude 3.5 Sonnet,Standard,true,3
+Nanoservices,Ecommerce,Claude 3.5 Sonnet,Standard,false,0
+Nanoservices,Video Processing,Claude 3.5 Sonnet,Standard,false,0
+Shared Persistency,Ecommerce,Claude 3.5 Sonnet,Standard,false,0
+Shared Persistency,Video Processing,Claude 3.5 Sonnet,Standard,false,0
+Ambigious Service,Museum,Claude 3.5 Sonnet,CoT+Example,true,3
+Ambigious Service,Twilio,Claude 3.5 Sonnet,CoT+Example,false,0
+API Versioning,Museum,Claude 3.5 Sonnet,CoT+Example,false,0
+API Versioning,Twilio,Claude 3.5 Sonnet,CoT+Example,true,3
+Service Chain,2PC,Claude 3.5 Sonnet,CoT+Example,false,0
+Service Chain,Ledger,Claude 3.5 Sonnet,CoT+Example,true,2
+Chatty Service,2PC,Claude 3.5 Sonnet,CoT+Example,true,2
+Chatty Service,Ledger,Claude 3.5 Sonnet,CoT+Example,true,3
+Nanoservices,Ecommerce,Claude 3.5 Sonnet,CoT+Example,false,0
+Nanoservices,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
+Shared Persistency,Ecommerce,Claude 3.5 Sonnet,CoT+Example,true,3
+Shared Persistency,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
