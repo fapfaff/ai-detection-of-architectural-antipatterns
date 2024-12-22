@@ -1,0 +1,31 @@
+## Prompt:
+You are an experienced IT Architect specializing in microservice architectures. Your task is to analyze the attached PlantUML and OpenAPI files to identify architectural antipatterns. For each antipattern found, provide:
+
+The name of the antipattern.
+A concise explanation of how it manifests in the architecture.
+A proposed solution to address the issue.
+
+## Response:
+You are an IT Architect specializing in microservice architectures. Your task is to analyze the attached PlantUML and OpenAPI files to identify architectural antipatterns. 
+Follow a detailed step-by-step analysis:
+
+1. Understand the Context: Provide a high-level summary of the architecture's structure and purpose.
+2. Analyze Dependencies: Identify how services interact and depend on each other.
+3. Identify Antipatterns: List potential antipatterns and explain why they apply.
+4. List each antipattern with the following details
+ * The name of the antipattern.
+ * A concise explanation of how it manifests in the architecture.
+ * A proposed solution to address the issue.
+ 
+Example:
+**Antipattern 1: Chatty Service** 
+**Manifestation:** 
+The Payment Service (PS) makes multiple calls to the LedgerStore (LS) in quick succession:
+- Lookup Hold
+- Check Hold Status
+- Retrieve Hold Details
+- Verify Hold Amount
+
+**Proposed Solution:**  
+- Use a bulk request approach or a composite API pattern. Instead of multiple calls, PS can request all necessary details in one API call, e.g., `LS: GetHoldDetails`.
+- Introduce a caching mechanism to avoid repeated lookups for data that does not frequently change.
