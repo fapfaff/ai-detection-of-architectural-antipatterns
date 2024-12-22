@@ -47,3 +47,27 @@ Nanoservices,Ecommerce,Claude 3.5 Sonnet,CoT+Example,false,0
 Nanoservices,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
 Shared Persistency,Ecommerce,Claude 3.5 Sonnet,CoT+Example,true,3
 Shared Persistency,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
+Ambigious Service,Museum,Gemini 1.5 Pro,Standard,true,3
+Ambigious Service,Twilio,Gemini 1.5 Pro,Standard,true,2
+API Versioning,Museum,Gemini 1.5 Pro,Standard,true,3
+API Versioning,Twilio,Gemini 1.5 Pro,Standard,false,0
+Service Chain,2PC,Gemini 1.5 Pro,Standard,false,0
+Service Chain,Ledger,Gemini 1.5 Pro,Standard,false,0
+Chatty Service,2PC,Gemini 1.5 Pro,Standard,false,0
+Chatty Service,Ledger,Gemini 1.5 Pro,Standard,true,3
+Nanoservices,Ecommerce,Gemini 1.5 Pro,Standard,true,2
+Nanoservices,Video Processing,Gemini 1.5 Pro,Standard,false,0
+Shared Persistency,Ecommerce,Gemini 1.5 Pro,Standard,true,3
+Shared Persistency,Video Processing,Gemini 1.5 Pro,Standard,true,3
+Ambigious Service,Museum,Gemini 1.5 Pro,CoT+Example,false,0
+Ambigious Service,Twilio,Gemini 1.5 Pro,CoT+Example,false,0
+API Versioning,Museum,Gemini 1.5 Pro,CoT+Example,false,0
+API Versioning,Twilio,Gemini 1.5 Pro,CoT+Example,false,0
+Service Chain,2PC,Gemini 1.5 Pro,CoT+Example,false,0
+Service Chain,Ledger,Gemini 1.5 Pro,CoT+Example,false,0
+Chatty Service,2PC,Gemini 1.5 Pro,CoT+Example,false,0
+Chatty Service,Ledger,Gemini 1.5 Pro,CoT+Example,true,3
+Nanoservices,Ecommerce,Gemini 1.5 Pro,CoT+Example,false,0
+Nanoservices,Video Processing,Gemini 1.5 Pro,CoT+Example,true,3
+Shared Persistency,Ecommerce,Gemini 1.5 Pro,CoT+Example,true,3
+Shared Persistency,Video Processing,Gemini 1.5 Pro,CoT+Example,false,0
