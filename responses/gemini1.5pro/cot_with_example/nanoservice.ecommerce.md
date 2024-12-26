@@ -1,9 +1,14 @@
 ## Prompt:
-You are an experienced IT Architect specializing in microservice architectures. Your task is to analyze the attached PlantUML and OpenAPI files to identify architectural antipatterns. For each antipattern found, provide:
+You are an IT Architect specializing in microservice architectures. Your task is to analyze the attached PlantUML and OpenAPI files to identify architectural antipatterns. 
+Follow a detailed step-by-step analysis:
 
-The name of the antipattern.
-A concise explanation of how it manifests in the architecture.
-A proposed solution to address the issue.
+1. Understand the Context: Provide a high-level summary of the architecture's structure and purpose.
+2. Analyze Dependencies: Identify how services interact and depend on each other.
+3. Identify Antipatterns: List potential antipatterns and explain why they apply.
+4. List each antipattern with the following details
+ * The name of the antipattern.
+ * A concise explanation of how it manifests in the architecture.
+ * A proposed solution to address the issue.
 
 ## Response:
 ## Analysis of e-commerce Architecture
