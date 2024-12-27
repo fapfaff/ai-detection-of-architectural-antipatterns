@@ -104,6 +104,6 @@ Service Chain,Ledger,Gemini 1.5 Pro,Cot+Catalog,true,2
 Chatty Service,2PC,Gemini 1.5 Pro,Cot+Catalog,true,2
 Chatty Service,Ledger,Gemini 1.5 Pro,Cot+Catalog,true,3
 Nanoservices,Ecommerce,Gemini 1.5 Pro,Cot+Catalog,false,0
-Nanoserivces,Video Processing,Gemini 1.5 Pro,Cot+Catalog,true,3
+Nanoservices,Video Processing,Gemini 1.5 Pro,Cot+Catalog,true,3
 Shared Persistency,Ecommerce,Gemini 1.5 Pro,Cot+Catalog,true,3
 Shared Persistency,Video Processing,Gemini 1.5 Pro,Cot+Catalog,true,3
