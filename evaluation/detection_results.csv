@@ -23,6 +23,18 @@ Nanoservices,Ecommerce,GPT-4o,CoT+Example,true,2
 Nanoservices,Video Processing,GPT-4o,CoT+Example,false,0
 Shared Persistency,Ecommerce,GPT-4o,CoT+Example,true,3
 Shared Persistency,Video Processing,GPT-4o,CoT+Example,true,3
+Ambigious Service,Museum,GPT-4o,Cot+Catalog,true,3
+Ambigious Service,Twilio,GPT-4o,Cot+Catalog,false,0
+API Versioning,Museum,GPT-4o,Cot+Catalog,true,3
+API Versioning,Twilio,GPT-4o,Cot+Catalog,false,0
+Service Chain,2PC,GPT-4o,Cot+Catalog,false,0
+Service Chain,Ledger,GPT-4o,Cot+Catalog,false,0
+Chatty Service,2PC,GPT-4o,Cot+Catalog,true,3
+Chatty Service,Ledger,GPT-4o,Cot+Catalog,true,3
+Nanoservices,Ecommerce,GPT-4o,Cot+Catalog,true,3
+Nanoservices,Video Processing,GPT-4o,Cot+Catalog,false,0
+Shared Persistency,Ecommerce,GPT-4o,Cot+Catalog,true,3
+Shared Persistency,Video Processing,GPT-4o,Cot+Catalog,true,3
 Ambigious Service,Museum,Claude 3.5 Sonnet,Standard,true,2
 Ambigious Service,Twilio,Claude 3.5 Sonnet,Standard,false,0
 API Versioning,Museum,Claude 3.5 Sonnet,Standard,true,3
@@ -47,6 +59,18 @@ Nanoservices,Ecommerce,Claude 3.5 Sonnet,CoT+Example,false,0
 Nanoservices,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
 Shared Persistency,Ecommerce,Claude 3.5 Sonnet,CoT+Example,true,3
 Shared Persistency,Video Processing,Claude 3.5 Sonnet,CoT+Example,true,3
+Ambigious Service,Museum,Claude 3.5 Sonnet,Cot+Catalog,true,3
+Ambigious Service,Twilio,Claude 3.5 Sonnet,Cot+Catalog,true,2
+API Versioning,Museum,Claude 3.5 Sonnet,Cot+Catalog,false,0
+API Versioning,Twilio,Claude 3.5 Sonnet,Cot+Catalog,true,2
+Service Chain,2PC,Claude 3.5 Sonnet,Cot+Catalog,true,2
+Service Chain,Ledger,Claude 3.5 Sonnet,Cot+Catalog,true,2
+Chatty Service,2PC,Claude 3.5 Sonnet,Cot+Catalog,false,0
+Chatty Service,Ledger,Claude 3.5 Sonnet,Cot+Catalog,true,3
+Nanoservices,Ecommerce,Claude 3.5 Sonnet,Cot+Catalog,false,0
+Nanoservices,Video Processing,Claude 3.5 Sonnet,Cot+Catalog,true,3
+Shared Persistency,Ecommerce,Claude 3.5 Sonnet,Cot+Catalog,true,3
+Shared Persistency,Video Processing,Claude 3.5 Sonnet,Cot+Catalog,true,3
 Ambigious Service,Museum,Gemini 1.5 Pro,Standard,true,3
 Ambigious Service,Twilio,Gemini 1.5 Pro,Standard,true,2
 API Versioning,Museum,Gemini 1.5 Pro,Standard,true,3
