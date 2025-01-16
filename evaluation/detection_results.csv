@@ -1,109 +1,109 @@
 Antipattern,InputFormat,Example,Model,Prompt,Detected,ImprovementQuality
-Ambigious Service,OpenApi,Museum,GPT-4o,Standard,true,2
-Ambigious Service,OpenApi,Twilio,GPT-4o,Standard,true,2
-API Versioning,OpenApi,Museum,GPT-4o,Standard,true,3
-API Versioning,OpenApi,Twilio,GPT-4o,Standard,false,0
-Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,Standard,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,Standard,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,Standard,true,2
-Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,Standard,false,0
-Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,Standard,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,Standard,false,0
-Ambigious Service,OpenApi,Museum,GPT-4o,CoT,false,0
-Ambigious Service,OpenApi,Twilio,GPT-4o,CoT,true,1
-API Versioning,OpenApi,Museum,GPT-4o,CoT,false,0
-API Versioning,OpenApi,Twilio,GPT-4o,CoT,false,0
-Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,CoT,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,CoT,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,CoT,true,3
-Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,CoT,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,CoT,true,2
-Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,CoT,false,0
-Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,CoT,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,CoT,true,3
-Ambigious Service,OpenApi,Museum,GPT-4o,CoT+Catalog,true,3
-Ambigious Service,OpenApi,Twilio,GPT-4o,CoT+Catalog,false,0
-API Versioning,OpenApi,Museum,GPT-4o,CoT+Catalog,true,3
-API Versioning,OpenApi,Twilio,GPT-4o,CoT+Catalog,false,0
-Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,CoT+Catalog,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,CoT+Catalog,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,CoT+Catalog,true,3
-Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,CoT+Catalog,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,CoT+Catalog,true,3
-Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,CoT+Catalog,false,0
-Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,CoT+Catalog,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,CoT+Catalog,true,3
-Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,Standard,true,2
-Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,Standard,false,0
-API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,Standard,true,3
-API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,Standard,true,3
-Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,Standard,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,Standard,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,Standard,false,0
-Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,Standard,false,0
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,Standard,false,0
-Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,Standard,false,0
-Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,CoT,true,3
-Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,CoT,false,0
-API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,CoT,false,0
-API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,CoT,true,3
-Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,CoT,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,CoT,true,1
-Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,CoT,true,3
-Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,CoT,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,CoT,false,0
-Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,CoT,true,3
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,CoT,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,CoT,true,3
-Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,CoT+Catalog,true,3
-Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,CoT+Catalog,true,2
-API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,CoT+Catalog,false,0
-API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,CoT+Catalog,true,2
-Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,CoT+Catalog,true,2
-Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,CoT+Catalog,true,2
-Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,CoT+Catalog,false,0
-Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,CoT+Catalog,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,CoT+Catalog,false,0
-Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,CoT+Catalog,true,3
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,CoT+Catalog,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,CoT+Catalog,true,3
-Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,Standard,true,3
-Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,Standard,true,2
-API Versioning,OpenApi,Museum,Gemini 1.5 Pro,Standard,true,3
-API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,Standard,false,0
-Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,Standard,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,Standard,false,0
-Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,Standard,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,Standard,true,2
-Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,Standard,false,0
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,Standard,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,Standard,true,3
-Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,CoT,false,0
-Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,CoT,false,0
-API Versioning,OpenApi,Museum,Gemini 1.5 Pro,CoT,false,0
-API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,CoT,false,0
-Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,CoT,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,CoT,false,0
-Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,CoT,false,0
-Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,CoT,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,CoT,false,0
-Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,CoT,true,3
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,CoT,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,CoT,false,0
-Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,CoT+Catalog,true,3
-Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,CoT+Catalog,true,3
-API Versioning,OpenApi,Museum,Gemini 1.5 Pro,CoT+Catalog,true,3
-API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,CoT+Catalog,true,3
-Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,CoT+Catalog,false,0
-Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,CoT+Catalog,true,2
-Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,CoT+Catalog,true,2
-Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,CoT+Catalog,true,3
-Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,CoT+Catalog,false,0
-Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,CoT+Catalog,true,3
-Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,CoT+Catalog,true,3
-Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,CoT+Catalog,true,3
+Ambigious Service,OpenApi,Museum,GPT-4o,RB,true,2
+Ambigious Service,OpenApi,Twilio,GPT-4o,RB,true,2
+Missing API Versioning,OpenApi,Museum,GPT-4o,RB,true,3
+Missing API Versioning,OpenApi,Twilio,GPT-4o,RB,false,0
+Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,RB,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,RB,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,RB,true,2
+Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,RB,false,0
+Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,RB,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,RB,false,0
+Ambigious Service,OpenApi,Museum,GPT-4o,RB+CoT,false,0
+Ambigious Service,OpenApi,Twilio,GPT-4o,RB+CoT,true,1
+Missing API Versioning,OpenApi,Museum,GPT-4o,RB+CoT,false,0
+Missing API Versioning,OpenApi,Twilio,GPT-4o,RB+CoT,false,0
+Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,RB+CoT,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,RB+CoT,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,RB+CoT,true,3
+Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,RB+CoT,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,RB+CoT,true,2
+Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,RB+CoT,false,0
+Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,RB+CoT,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,RB+CoT,true,3
+Ambigious Service,OpenApi,Museum,GPT-4o,RB+CoT+Cat,true,3
+Ambigious Service,OpenApi,Twilio,GPT-4o,RB+CoT+Cat,false,0
+Missing API Versioning,OpenApi,Museum,GPT-4o,RB+CoT+Cat,true,3
+Missing API Versioning,OpenApi,Twilio,GPT-4o,RB+CoT+Cat,false,0
+Service Chain,PlantUML Sequence Diagram,2PC,GPT-4o,RB+CoT+Cat,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,GPT-4o,RB+CoT+Cat,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,GPT-4o,RB+CoT+Cat,true,3
+Chatty Service,PlantUML Sequence Diagram,Ledger,GPT-4o,RB+CoT+Cat,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,GPT-4o,RB+CoT+Cat,true,3
+Nanoservices,PlantUML Component Diagram,Video Processing,GPT-4o,RB+CoT+Cat,false,0
+Shared Persistency,PlantUML Component Diagram,Ecommerce,GPT-4o,RB+CoT+Cat,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,GPT-4o,RB+CoT+Cat,true,3
+Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,RB,true,2
+Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,RB,false,0
+Missing API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,RB,true,3
+Missing API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,RB,true,3
+Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB,false,0
+Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB,false,0
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB,false,0
+Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB,false,0
+Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,RB+CoT,true,3
+Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,RB+CoT,false,0
+Missing API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,RB+CoT,false,0
+Missing API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,RB+CoT,true,3
+Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB+CoT,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB+CoT,true,1
+Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB+CoT,true,3
+Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB+CoT,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB+CoT,false,0
+Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB+CoT,true,3
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB+CoT,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB+CoT,true,3
+Ambigious Service,OpenApi,Museum,Claude 3.5 Sonnet,RB+CoT+Cat,true,3
+Ambigious Service,OpenApi,Twilio,Claude 3.5 Sonnet,RB+CoT+Cat,true,2
+Missing API Versioning,OpenApi,Museum,Claude 3.5 Sonnet,RB+CoT+Cat,false,0
+Missing API Versioning,OpenApi,Twilio,Claude 3.5 Sonnet,RB+CoT+Cat,true,2
+Service Chain,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB+CoT+Cat,true,2
+Service Chain,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB+CoT+Cat,true,2
+Chatty Service,PlantUML Sequence Diagram,2PC,Claude 3.5 Sonnet,RB+CoT+Cat,false,0
+Chatty Service,PlantUML Sequence Diagram,Ledger,Claude 3.5 Sonnet,RB+CoT+Cat,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB+CoT+Cat,false,0
+Nanoservices,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB+CoT+Cat,true,3
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Claude 3.5 Sonnet,RB+CoT+Cat,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,Claude 3.5 Sonnet,RB+CoT+Cat,true,3
+Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,RB,true,3
+Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,RB,true,2
+Missing API Versioning,OpenApi,Museum,Gemini 1.5 Pro,RB,true,3
+Missing API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,RB,false,0
+Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB,false,0
+Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB,true,2
+Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB,false,0
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB,true,3
+Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,RB+CoT,false,0
+Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,RB+CoT,false,0
+Missing API Versioning,OpenApi,Museum,Gemini 1.5 Pro,RB+CoT,false,0
+Missing API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,RB+CoT,false,0
+Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB+CoT,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB+CoT,false,0
+Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB+CoT,false,0
+Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB+CoT,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB+CoT,false,0
+Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB+CoT,true,3
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB+CoT,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB+CoT,false,0
+Ambigious Service,OpenApi,Museum,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Ambigious Service,OpenApi,Twilio,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Missing API Versioning,OpenApi,Museum,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Missing API Versioning,OpenApi,Twilio,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Service Chain,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB+CoT+Cat,false,0
+Service Chain,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB+CoT+Cat,true,2
+Chatty Service,PlantUML Sequence Diagram,2PC,Gemini 1.5 Pro,RB+CoT+Cat,true,2
+Chatty Service,PlantUML Sequence Diagram,Ledger,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Nanoservices,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB+CoT+Cat,false,0
+Nanoservices,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Shared Persistency,PlantUML Component Diagram,Ecommerce,Gemini 1.5 Pro,RB+CoT+Cat,true,3
+Shared Persistency,PlantUML Component Diagram,Video Processing,Gemini 1.5 Pro,RB+CoT+Cat,true,3
